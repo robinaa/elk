@@ -5,7 +5,7 @@ Logstash will be listening for syslog events on the UDP port 5000.
 
 Clone the repo with:
 
-    $ git clone git@github.com:MBuffenoir/elk.git
+    $ git clone https://github.com/robinaa/elk.git
     $ cd elk
 
 Create a local machine and start ELK with:
