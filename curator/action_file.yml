@@ -3,16 +3,16 @@ actions:
   1:
     action: delete_indices
     description: >-
-      Alias indices older than 14 days, with a prefix of play-backend.
+      Alias indices older than 10 days, with a prefix of metric-beat-
     options:
       continue_if_exception: False
       disable_action: False
     filters:
     - filtertype: pattern
       kind: prefix
-      value: play-backend
+      value: metric-beat
     - filtertype: age
       source: creation_date
       direction: older
       unit: days
-      unit_count: 14
+      unit_count: 10
