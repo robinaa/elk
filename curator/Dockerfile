@@ -9,7 +9,7 @@ ADD config.yml /etc/curator
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 RUN python get-pip.py
 
-# Install curator (https://www.elastic.co/guide/en/elasticsearch/client/curator/4.2/installation.html)
+# Install curator (https://www.elastic.co/guide/en/elasticsearch/client/curator/5.0/installation.html)
 RUN pip install elasticsearch-curator
 
 # download go-cron
