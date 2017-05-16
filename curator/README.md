@@ -1,3 +1,5 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/robinaa/elk.svg)](https://hub.docker.com/r/robinaa/elk/)
+
 # Managing indices through Curator
 
 
