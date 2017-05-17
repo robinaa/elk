@@ -40,5 +40,5 @@ Find more information about `Actions`, `Options` and `Filters` in the [Curator d
 The configuration and the frequency of how often curator is run, is handled through the `COMMAND` and `SCHEDULE` environment variables. The `COMMAND` runs curator specifying the configs. `SCHEDULE` is a cron expression of how often curator is run. Below is an example of how to start the container.
 
 ```bash
-docker run -d -e SCHEDULE='30 4 * * *' -e COMMAND='curator --config /etc/curator/config.yml  /etc/curator/action_file.yml' --link <name_of_elasticsearch_container>:elasticsearch robinaa/elk:curator-latest
+docker run -d -e SCHEDULE='30 4 * * *' -e COMMAND='curator --config /etc/curator/config.yml  /etc/curator/action_file.yml' --network=<name_of_network> --link <name_of_elasticsearch_container>:elasticsearch robinaa/elk:curator-latest
 ```
