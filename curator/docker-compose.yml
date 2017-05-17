@@ -9,8 +9,8 @@ services:
       - $PWD/action_file.yml:/etc/curator/action_file.yml
       - $PWD/config.yml:/etc/curator/config.yml
     environment:
-      - SCHEDULE='2 * * * *'
-      - COMMAND='curator --config /etc/curator/config.yml  /etc/curator/action_file.yml'
+      - SCHEDULE=30 23 * * *
+      - COMMAND=curator --config /etc/curator/config.yml  /etc/curator/action_file.yml
     networks:
       - logging
 
