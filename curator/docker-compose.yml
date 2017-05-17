@@ -2,7 +2,7 @@ version: '2'
 
 services:
   curator:
-    image: robinaa/elasticsearch-curator-docker:latest
+    image: robinaa/elasticsearch-curator-docker:release-5.0.0
     external_links:
       - elasticsearch:elasticsearch
     volumes:
